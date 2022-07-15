@@ -42,9 +42,17 @@ class Crawler():
         self.driver.close()
 
     def save_to_file(self, articles: List[Article]) -> None:
+        title = "لیست پست‌های منتشر شده توسط من"
+        contact = "ارتباط با من"
+        virgool = "ویرگول"
+        telegram = "کانال تلگرام"
         with open('articles.md', 'w', encoding='utf-8') as f:
+            f.write("## " + title + "\n")
             for article in reversed(articles):
-                f.write("[" + article.title + "](" + article.href + ")\n\n")
+                f.write("#### [" + article.title + "](" + article.href + ")\n\n")
+            f.write("## " + contact + "\n")
+            f.write("#### [" + virgool + "](https://virgool.io/@haniehmahdavi26)\n")
+            f.write("#### [" + telegram + "](https://t.me/honio_notes)\n")
             f.close()
         print("articles.md saved successfully!")
 
