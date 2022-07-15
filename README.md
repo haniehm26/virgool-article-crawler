@@ -1,16 +1,16 @@
-## Virgool Article Crawler
+# Virgool Article Crawler
 A crawler for [Hanieh Mahdavi Virgool Account](https://virgool.io/@haniehmahdavi26) to crawl article titles and links.
 
-### Features
+## Features
 + implemented in Python
 + crawl dynamic data using Selenium
 
-### Setup
+## Setup
 ```console
 python run.py
 ```
 
-### Output
+## Output
 ## لیست پست‌های منتشر شده توسط من
 #### [جزوه دوره یادگیری ماشین دکتر مهدیه سلیمانی - جلسه اول - مقدمه و معرفی یادگیری ماشین](https://virgool.io/@haniehmahdavi26/%D8%AC%D8%B2%D9%88%D9%87-%D8%AF%D9%88%D8%B1%D9%87-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D8%AF%DA%A9%D8%AA%D8%B1-%D9%85%D9%87%D8%AF%DB%8C%D9%87-%D8%B3%D9%84%DB%8C%D9%85%D8%A7%D9%86%DB%8C-%D8%AC%D9%84%D8%B3%D9%87-%D8%A7%D9%88%D9%84-%D9%85%D9%82%D8%AF%D9%85%D9%87-%D9%88-%D9%85%D8%B9%D8%B1%D9%81%DB%8C-%DB%8C%D8%A7%D8%AF%DA%AF%DB%8C%D8%B1%DB%8C-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-q4xhxdd8ijh0)
 
