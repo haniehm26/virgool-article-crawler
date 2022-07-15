@@ -9,9 +9,9 @@ WAITING_TIME = 3
 SCROLL_PAUSE_TIME = 2
 
 class Crawler():
-    def __init__(self, user_name, contact_info) -> None:
+    def __init__(self, virgool_user_name, contact_info) -> None:
         self.contact_info = contact_info
-        self.URL = 'https://virgool.io/@' + user_name
+        self.URL = 'https://virgool.io/@' + virgool_user_name
         self.driver = webdriver.Chrome(ChromeDriverManager().install())
 
     def request(self) -> None:
@@ -52,11 +52,10 @@ class Crawler():
             f.write("## " + title + "\n")
             for article in reversed(articles):
                 f.write("#### [" + article.title + "](" + article.href + ")\n\n")
-            if self.contact_info == True:
-                f.write("## " + contact + "\n")
-                f.write("#### [" + linkedin + "](https://www.linkedin.com/in/hanieh-mahdavi/)\n")
-                f.write("#### [" + virgool + "](https://virgool.io/@haniehmahdavi26)\n")
-                f.write("#### [" + telegram + "](https://t.me/honio_notes)")
+            f.write("## " + contact + "\n")
+            f.write("#### [" + linkedin + "](" + self.contact_info['linkedin']+ ")\n")
+            f.write("#### [" + virgool + "](" + self.contact_info['virgool']+ ")\n")
+            f.write("#### [" + telegram + "](" + self.contact_info['telegram']+ ")")
             f.close()
         print("articles.md saved successfully!")
 
