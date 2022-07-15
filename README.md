@@ -1,5 +1,5 @@
 ## Virgool Article Crawler
-A crawler for [Hanieh Mahdavi](https://virgool.io/@haniehmahdavi26) to crawl article titles and links.
+A crawler for [Hanieh Mahdavi Virgool Account](https://virgool.io/@haniehmahdavi26) to crawl article titles and links.
 
 ### Features
 + implemented in Python
